@@ -13,7 +13,7 @@ function App() {
   };
   return (
     <main className='flex flex-col min-h-[80vh] justify-center items-center max-w-xl w-full mx-auto'>
-      <h1 className='text-4xl text-indigo-500'>REACT|GROQ AI</h1>
+      <h1 className='text-4xl font-bold text-indigo-500'>REACT|GROQ AI</h1>
       <form className='flex flex-col gap-4 py-4 w-full'>
         <input 
         placeholder='ketik permintaan di sini' 
@@ -28,7 +28,7 @@ function App() {
         >
           kirim</button>
       </form>
-      <div className="max-w-xl w-full mx-auto">
+      <div className="max-w-xl w-full">
       {data ? 
       <SyntaxHighlight language='swift' style={darcula} wrapLongLines={true}>{data}</SyntaxHighlight>
       : null}
